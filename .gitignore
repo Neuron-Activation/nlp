@@ -1,0 +1,6 @@
+*.log
+*.wandb
+*.json
+*.yaml
+*.txt
+*.pth
