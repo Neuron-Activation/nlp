@@ -4,15 +4,9 @@ from sklearn.model_selection import train_test_split
 from transformers import BertTokenizer, BertForSequenceClassification, AdamW
 import torch
 from torch.utils.data import DataLoader, TensorDataset
-from sklearn.metrics import accuracy_score, roc_auc_score
 import logging
 import argparse
-import pickle
-import re
 import warnings
-from nltk.corpus import stopwords
-from onnxruntime import InferenceSession
-from onnx import ModelProto
 import wandb
 
 # Настройка логирования
